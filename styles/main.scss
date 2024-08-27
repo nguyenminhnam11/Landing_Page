@@ -1,0 +1,15 @@
+// main.scss
+
+// Import component styles
+@import 'themes/fonts';
+@import 'themes/colors';
+
+// Import base styles
+@import 'base/reset';
+
+// Import layout styles
+@import 'layout/footer';
+
+// Import component styles
+@import 'components/buttons';
+
