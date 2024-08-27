@@ -57,7 +57,7 @@ body {
   }
 }
 #hero {
-  min-height: 125vh;
+  min-height: 950px;
   color: #FFF;
   position: relative;
 }
@@ -146,7 +146,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 .hero-right .hero-img .sub-hero-img img {
   width: 684px;
@@ -204,6 +204,168 @@ body {
     left: 8%;
   }
 }
+#about {
+  min-height: 730px;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1;
+  position: relative;
+}
+.about-image .circle-bg {
+  position: absolute;
+  width: 470px;
+  height: 470px;
+  background-color: #F8E71C;
+  border-radius: 50%;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.about-image .main-img {
+  position: absolute;
+  width: 756px;
+  height: 567px;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.about-image .shape-img {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.about-image .shape-img img {
+  width: 268px;
+  height: 268px;
+}
+.about-image .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+.about-image .play-btn i {
+  padding: 40px;
+  background-color: #FFF;
+  color: #FF564F;
+  border-radius: 50%;
+  font-size: 34px;
+}
+
+.about-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.about-content h1 {
+  font-size: 56px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Inknut Antiqua", serif;
+  line-height: 64px;
+}
+.about-content h4 {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 32px;
+}
+.about-content p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  line-height: 32px;
+  opacity: 0.5;
+}
+.about-content .about-btn {
+  display: flex;
+  gap: 49px;
+}
+.about-content .about-btn button:first-child {
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 14.5px 37.5px;
+  color: #FFF;
+  background-color: #FF564F;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.about-content .about-btn button:last-child {
+  font-family: "DM Sans", sans-serif;
+  color: #111;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 479px) {
+  #about {
+    min-height: 1000px;
+    padding: 0 8%;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .about-image .circle-bg {
+    width: 329px;
+    height: 329px;
+  }
+  .about-image .main-img {
+    width: 454px;
+    height: 340px;
+  }
+  .about-image .shape-img {
+    top: 50%;
+    left: 30%;
+    transform: translate(-74%, -40%);
+  }
+  .about-image .shape-img img {
+    width: 268px;
+    height: 268px;
+  }
+  .about-image .shape-img img:nth-of-type(2) {
+    visibility: hidden;
+  }
+  .about-content {
+    flex: 0;
+    padding-bottom: 50px;
+  }
+  .about-content h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .about-content h4 {
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  .about-content .about-btn {
+    gap: 33px;
+  }
+  .about-content .about-btn button:first-child {
+    padding: 14.5px 35px;
+  }
+}
 .button-gr {
   display: flex;
   gap: 8px;
@@ -217,6 +379,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .button-gr button i {
   font-size: 16px;
