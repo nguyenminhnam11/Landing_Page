@@ -6,9 +6,11 @@
 
 // Import base styles
 @import 'base/reset';
+@import 'base/mixins';
 
 // Import layout styles
 @import 'layout/footer';
+@import 'layout/navbar';
 
 // Import component styles
 @import 'components/buttons';
