@@ -366,6 +366,128 @@ body {
     padding: 14.5px 35px;
   }
 }
+#features {
+  padding: 140px 10%;
+  padding-bottom: 120px;
+  background-color: #111;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-info {
+  display: flex;
+}
+.feature-info h1 {
+  flex: 1;
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 64px;
+  font-family: "Inknut Antiqua", serif;
+  text-transform: uppercase;
+}
+.feature-info p {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  font-family: "DM Sans", sans-serif;
+  opacity: 0.5;
+  text-align: justify;
+}
+
+.feature-wrapper {
+  margin-top: 125px;
+  display: flex;
+  gap: 30px;
+}
+.feature-wrapper .item {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.feature-wrapper .item img {
+  width: 48px;
+  height: 48px;
+}
+.feature-wrapper .item h3 {
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.feature-wrapper .item p {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  opacity: 0.5;
+}
+.feature-wrapper .item:first-child {
+  background-color: #9013FE;
+}
+.feature-wrapper .item:last-child {
+  background-color: #417505;
+}
+
+.indicator {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+.indicator .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #FFF;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+.indicator .dot:first-child {
+  background-color: #9013FE;
+  opacity: 1;
+}
+
+@media screen and (max-width: 479px) {
+  #features {
+    padding: 100px 8%;
+    padding-bottom: 80px;
+  }
+  .feature-info {
+    flex-direction: column;
+    gap: 52px;
+  }
+  .feature-info h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .feature-wrapper {
+    margin-top: 80px;
+    gap: 0;
+  }
+  .feature-wrapper .item:last-child {
+    display: none;
+  }
+  .indicator {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+  }
+  .indicator .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #FFF;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+  .indicator .dot:first-child {
+    background-color: #9013FE;
+    opacity: 1;
+  }
+}
 .button-gr {
   display: flex;
   gap: 8px;
