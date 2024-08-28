@@ -5,10 +5,7 @@
 }
 
 .sub-background {
-    position: relative;
-    background-color: #111;
-    height: 630px;
-    z-index: 1;
+    @include subBackground();
 
     .pagination {
         position: absolute;
@@ -61,13 +58,13 @@
         }
 
         p {
+            @include textParagraphStyle();
             width: 370px;
             font-family: "Roboto Condensed", sans-serif;
-            font-size: 16px;
-            line-height: 32px;
-            font-weight: 400;
             letter-spacing: 3px;
             text-transform: uppercase;
+            text-align: unset;
+            opacity: 1;
         }
     }
 }

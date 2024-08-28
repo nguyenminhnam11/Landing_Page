@@ -41,3 +41,10 @@
     height: 2px;
     background-color: #111;
 }
+
+@mixin subBackground {
+    position: relative;
+    background-color: #111;
+    height: 630px;
+    z-index: 1;
+}
