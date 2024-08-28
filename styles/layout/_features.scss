@@ -9,24 +9,16 @@
 
 .feature-info {
     display: flex;
+    gap: 30px;
 
     h1 {
         flex: 1;
-        font-size: 56px;
-        font-weight: 900;
-        line-height: 64px;
-        font-family: "Inknut Antiqua", serif;
-        text-transform: uppercase;
+        @include titleH1Style();
     }
 
     p {
         flex: 1;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 32px;
-        font-family: "DM Sans", sans-serif;
-        opacity: 0.5;
-        text-align: justify;
+        @include textParagraphStyle();
     }
 }
 
@@ -55,11 +47,7 @@
         }
 
         p {
-            font-size: 16px;
-            line-height: 32px;
-            font-weight: 400;
-            font-family: "DM Sans", sans-serif;
-            opacity: 0.5;
+            @include textParagraphStyle();
         }
     }
 
