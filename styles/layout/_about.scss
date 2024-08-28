@@ -70,11 +70,7 @@
     gap: 34px;
 
     h1 {
-        font-size: 56px;
-        font-weight: 900;
-        text-transform: uppercase;
-        font-family: "Inknut Antiqua", serif;
-        line-height: 64px;
+        @include titleH1Style();
     }
 
     h4 {
@@ -86,11 +82,7 @@
     }
 
     p {
-        font-size: 16px;
-        font-weight: 400;
-        font-family: "DM Sans", sans-serif;
-        line-height: 32px;
-        opacity: 0.5;
+        @include textParagraphStyle();
     }
 
     .about-btn {
@@ -98,18 +90,7 @@
         gap: 49px;
 
         button:first-child {
-            font-family: "Roboto Condensed", sans-serif;
-            padding: 14.5px 37.5px;
-            color: #FFF;
-            background-color: $orange;
-            border: none;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 18.75px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            border-radius: 4px;
-            cursor: pointer;
+            @include buttonStyle()
         }
 
         button:last-child {

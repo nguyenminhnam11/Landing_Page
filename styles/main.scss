@@ -6,6 +6,7 @@
 
 // Import base styles
 @import 'base/reset';
+@import 'base/responsive';
 @import 'base/mixins';
 
 // Import layout styles
@@ -14,6 +15,7 @@
 @import 'layout/hero';
 @import 'layout/about';
 @import 'layout/features';
+@import 'layout/projects';
 
 // Import component styles
 @import 'components/buttons';
