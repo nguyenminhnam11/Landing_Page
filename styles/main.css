@@ -944,9 +944,11 @@ body {
 }
 .feedback-content .right-feedback .slide-item-1 {
   background-color: #417505;
+  transition: 0.3s ease;
 }
 .feedback-content .right-feedback .slide-item-2 {
   background-color: #9013FE;
+  transition: 0.3s ease;
 }
 
 .btn-feedback {
@@ -1452,7 +1454,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.1s;
   cursor: pointer;
+}
+.button-gr button:hover {
+  transform: scale(1.05);
+}
+.button-gr button:active {
+  transform: scale(0.9);
 }
 .button-gr button i {
   font-size: 16px;

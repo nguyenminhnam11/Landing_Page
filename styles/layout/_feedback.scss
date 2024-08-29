@@ -99,10 +99,12 @@
 
         .slide-item-1 {
             background-color: $green;
+            transition: .3s ease;
         }
 
         .slide-item-2 {
             background-color: $purple;
+            transition: .3s ease;
         }
     }
 }
@@ -178,7 +180,6 @@
             position: relative;
             top: 40px;
             overflow: visible;
-
 
             .slide-item {
                 width: 100%;
