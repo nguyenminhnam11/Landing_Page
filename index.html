@@ -17,13 +17,21 @@
         <img src="./assets/images/Union.png" alt="logo" />
       </div>
       <ul class="nav-menu">
-        <li class="menu-item">About</li>
-        <li class="menu-item">Portfolio</li>
-        <li class="menu-item">Contact</li>
+        <li class="menu-item"><a href="#about">About</a></li>
+        <li class="menu-item"><a href="#projects">Portfolio</a></li>
+        <li class="menu-item"><a href="#footer">Contact</a></li>
       </ul>
-      <div class="hamburger">
+      <div onclick="showMenu()" class="hamburger">
         <i class="bx bx-menu-alt-right"></i>
       </div>
+
+      <div id="overlay" onclick="hideMenu()"></div>
+      <ul class="sidebar">
+        <li><i onclick="hideMenu()" class='bx bx-x'></i></li>
+        <li class="menu-mobi"><a href="#about">About</a></li>
+        <li class="menu-mobi"><a href="#projects">Portfolio</a></li>
+        <li class="menu-mobi"><a href="#footer">Contact</a></li>
+      </ul>
     </nav>
 
     <!-- Hero -->
@@ -303,7 +311,7 @@
         <div class="contact-email">
           <div class="email-box">
             <h3>Get in touch</h3>
-            <input type="email" placeholder="Your email"/>
+            <input type="email" placeholder="Your email" />
             <button>Subscribe</button>
           </div>
         </div>
@@ -341,5 +349,7 @@
 
       <div class="line-footer"></div>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>
