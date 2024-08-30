@@ -17,6 +17,8 @@ menuLinks.forEach(link => {
     link.addEventListener('click', hideMenu)
 })
 
+
+//Swiper library slider
 let swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
     spaceBetween: 30,

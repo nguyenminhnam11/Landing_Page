@@ -33,22 +33,23 @@
         .swiper-slide {
             display: flex;
             margin-bottom: 100px;
-            
+
             &:nth-child(even) .item {
                 background-color: $green;
             }
+
             .item {
                 padding: 48px;
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
                 background-color: $purple;
-    
+
                 img {
                     width: 48px;
                     height: 48px;
                 }
-    
+
                 h3 {
                     font-size: 24px;
                     line-height: 32px;
@@ -56,15 +57,13 @@
                     font-weight: 700;
                     font-family: "Roboto Condensed", sans-serif;
                 }
-    
+
                 p {
                     @include textParagraphStyle();
                 }
             }
         }
     }
-
-    
 
     .swiper-pagination-bullet {
         background-color: #9c9696;
