@@ -17,19 +17,40 @@ menuLinks.forEach(link => {
     link.addEventListener('click', hideMenu)
 })
 
-// Switch slide feedback
-const slide1 = document.querySelector('.slide-item-1')
-const slide2 = document.querySelector('.slide-item-2')
-const btnSwitch = document.querySelectorAll('.switch-slide')
-btnSwitch.forEach(btn => {
-    btn.addEventListener('click', () => {
-        if (slide1.style.transform == `translateX(500px)`) {
-            slide1.style.transform = `translateX(0)`
-            slide2.style.transform = `translateX(0)`
-        } else {
-            slide1.style.transform = `translateX(500px)`
-            slide2.style.transform = `translateX(-500px)`
-        }
-    
-    })
-})
+let swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        375: {
+            slidesPerView: 1,
+        },
+
+        768: {
+            slidesPerView: 2,
+        },
+    },
+});
+
+let swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 1.5,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+        nextEl: ".custom-next",
+        prevEl: ".custom-prev",
+    },
+    breakpoints: {
+        375: {
+            slidesPerView: 1,
+        },
+
+        768: {
+            slidesPerView: 1.5,
+        },
+    },
+});
+
