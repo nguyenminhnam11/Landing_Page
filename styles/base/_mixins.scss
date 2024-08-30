@@ -1,0 +1,50 @@
+@mixin titleH1Style {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 64px;
+    font-family: "Inknut Antiqua", serif;
+    text-transform: uppercase;
+}
+
+@mixin textParagraphStyle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: "DM Sans", sans-serif;
+    opacity: 0.5;
+    text-align: justify;
+}
+
+@mixin buttonStyle {
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 14.5px 37.5px;
+    color: #FFF;
+    background-color: $orange;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+@mixin linePage {
+    margin: 0 auto;
+    width: 80%;
+    height: 2px;
+    background-color: #111;
+}
+
+@mixin subBackground {
+    position: relative;
+    background-color: #111;
+    height: 630px;
+    z-index: 1;
+}

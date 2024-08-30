@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="nav-logo">
+        <img src="./assets/images/Union.png" alt="logo" />
+      </div>
+      <ul class="nav-menu">
+        <li class="menu-item"><a href="#about">About</a></li>
+        <li class="menu-item"><a href="#projects">Portfolio</a></li>
+        <li class="menu-item"><a href="#footer">Contact</a></li>
+      </ul>
+      <div onclick="showMenu()" class="hamburger">
+        <i class="bx bx-menu-alt-right"></i>
+      </div>
+
+      <div id="overlay" onclick="hideMenu()"></div>
+      <ul class="sidebar">
+        <li><i onclick="hideMenu()" class="bx bx-x"></i></li>
+        <li class="menu-mobi"><a href="#about">About</a></li>
+        <li class="menu-mobi"><a href="#projects">Portfolio</a></li>
+        <li class="menu-mobi"><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="sub-background">
+        <div class="pagination">
+          <div class="button-gr">
+            <button><i class="bx bxs-left-arrow"></i></button>
+            <button><i class="bx bxs-right-arrow"></i></button>
+          </div>
+          <div class="page-count">1 / 2</div>
+        </div>
+      </div>
+      <div class="wrapper-hero">
+        <div class="hero-left">
+          <h1>We create amazing sites with ease</h1>
+          <div class="sub-hero-title">
+            <img src="./assets/images/Object.png" alt="" />
+            <p>A peep at some distant orb has power to raise and purify</p>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-img">
+            <img src="./assets/images/Combined Shape.png" alt="image" />
+            <div class="sub-hero-img">
+              <img src="./assets/images/Bitmap.png" alt="image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="line"></div>
+
+    <!-- About -->
+    <section id="about">
+      <div class="about-image">
+        <div class="circle-bg"></div>
+        <div class="shape-img">
+          <img src="./assets/images/Combined Shape.png" alt="image" />
+          <img src="./assets/images/Combined Shape.png" alt="image" />
+        </div>
+        <img class="main-img" src="./assets/images/Bitmap(2).png" alt="image" />
+        <div class="play-btn">
+          <i class="bx bxs-right-arrow"></i>
+        </div>
+      </div>
+      <div class="about-content">
+        <h1>Let take advantage</h1>
+        <h4>Sable cloud beneath was dished</h4>
+        <p>
+          Best for active freelancers and designers who need more projects and
+          premium features code and unlock more.
+        </p>
+        <div class="about-btn">
+          <button>learn more</button>
+          <button>Explore services</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Features -->
+    <section id="features">
+      <div class="feature-info">
+        <h1>Our core features</h1>
+        <p>
+          Minuteness of the parts formed a great hindrance to my speed,
+          resolved, contrary to my first intention, to make the being.
+          Minuteness of the parts formed a great hindrance to my speed,
+          resolved, contrary to my first intention, to make the being.
+        </p>
+      </div>
+      <div class="feature-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item">
+                <img src="./assets/images/Object (1).png" alt="image" />
+                <h3>White Label</h3>
+                <p>
+                  Minuteness of the parts formed a great hindrance to my speed,
+                  resolved, contrary to my first intention, to make the being.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <img src="./assets/images/Object (2).png" alt="image" />
+                <h3>Code Export</h3>
+                <p>
+                  Minuteness of the parts formed a great hindrance to my speed,
+                  resolved, contrary to my first intention, to make the being.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <img src="./assets/images/Object (1).png" alt="image" />
+                <h3>White Label</h3>
+                <p>
+                  Minuteness of the parts formed a great hindrance to my speed,
+                  resolved, contrary to my first intention, to make the being.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <img src="./assets/images/Object (2).png" alt="image" />
+                <h3>Code Export</h3>
+                <p>
+                  Minuteness of the parts formed a great hindrance to my speed,
+                  resolved, contrary to my first intention, to make the being.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Check our projects -->
+    <section id="projects">
+      <div class="projects-intro">
+        <h1>Check our projects</h1>
+        <p>
+          Minuteness of the parts formed a great hindrance to my speed,
+          resolved, contrary to my first intention, to make the being.
+          Minuteness of the parts formed a great hindrance to my speed,
+          resolved, contrary to my first intention, to make the being.
+        </p>
+      </div>
+      <div class="line-project"></div>
+      <div class="projects-show">
+        <div class="portfolio">
+          <h3>Portfolio</h3>
+          <ul>
+            <li>All</li>
+            <li>Design</li>
+            <li>Development</li>
+            <li>Branding</li>
+            <li>Products</li>
+          </ul>
+
+          <div class="select-wrapper">
+            <select id="select-project">
+              <option>All</option>
+              <option>Design</option>
+              <option>Development</option>
+              <option>Branding</option>
+              <option>Products</option>
+            </select>
+            <div class="drop-down-icon">
+              <i class="bx bxs-down-arrow"></i>
+            </div>
+          </div>
+        </div>
+        <div class="show-wrapper">
+          <div class="project-item project-item-1">
+            <div class="title-item">
+              <p>Design</p>
+              <h2>Creative template</h2>
+            </div>
+            <img
+              class="project-item-1-img"
+              src="./assets/images/Bitmap(4).png"
+              alt="dog"
+            />
+          </div>
+
+          <div class="project-item project-item-2">
+            <div class="title-item">
+              <p>Branding</p>
+              <h2>Amazing startup</h2>
+            </div>
+            <img
+              class="project-item-2-img"
+              src="./assets/images/Bitmap(3).png"
+              alt="woman"
+            />
+          </div>
+
+          <button class="btn-project">Load more</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client say -->
+    <section id="feedback">
+      <div class="feedback-content">
+        <div class="left-feedback">
+          <h1>What Our Clients Say</h1>
+          <p>Testimonials</p>
+        </div>
+
+        <div class="right-feedback">
+          <div class="feedback-slide-container">
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="item-title">
+                    <img src="./assets/images/Oval.png" alt="ava" />
+                    <div class="client-info">
+                      <h3 class="client-name">Helena Brauer</h3>
+                      <p class="client-company">Apple Inc.</p>
+                    </div>
+                  </div>
+                  <p class="item-text">
+                    What looked like a small patch of purple grass, above five
+                    feet square, was moving across the sand in their direction.
+                    When it came near enough he perceived that it was not grass;
+                    there were no blades, but only purple roots. The roots were
+                    revolving, for each small plant in the whole patch, like the
+                    spokes of a rimless wheel.
+                  </p>
+                </div>
+                <div class="swiper-slide" style="background-color: #417505">
+                  <div class="item-title">
+                    <img src="./assets/images/Oval (1).png" alt="ava" />
+                    <div class="client-info">
+                      <h3 class="client-name">Kay Totleben</h3>
+                      <p class="client-company">Microsoft</p>
+                    </div>
+                  </div>
+                  <p class="item-text">
+                    What looked like a small patch of purple grass, above five
+                    feet square, was moving across the sand in their direction.
+                    When it came near enough he perceived that it was not grass;
+                    there were no blades, but only purple roots. The roots were
+                    revolving, for each small plant in the whole patch, like the
+                    spokes of a rimless wheel.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-title">
+                    <img src="./assets/images/Oval.png" alt="ava" />
+                    <div class="client-info">
+                      <h3 class="client-name">Helena Brauer</h3>
+                      <p class="client-company">Apple Inc.</p>
+                    </div>
+                  </div>
+                  <p class="item-text">
+                    What looked like a small patch of purple grass, above five
+                    feet square, was moving across the sand in their direction.
+                    When it came near enough he perceived that it was not grass;
+                    there were no blades, but only purple roots. The roots were
+                    revolving, for each small plant in the whole patch, like the
+                    spokes of a rimless wheel.
+                  </p>
+                </div>
+                <div class="swiper-slide" style="background-color: #417505">
+                  <div class="item-title">
+                    <img src="./assets/images/Oval (1).png" alt="ava" />
+                    <div class="client-info">
+                      <h3 class="client-name">Kay Totleben</h3>
+                      <p class="client-company">Microsoft</p>
+                    </div>
+                  </div>
+                  <p class="item-text">
+                    What looked like a small patch of purple grass, above five
+                    feet square, was moving across the sand in their direction.
+                    When it came near enough he perceived that it was not grass;
+                    there were no blades, but only purple roots. The roots were
+                    revolving, for each small plant in the whole patch, like the
+                    spokes of a rimless wheel.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-feedback">
+        <div class="button-gr">
+          <button class="custom-prev">
+            <i class="bx bxs-left-arrow"></i>
+          </button>
+          <button class="custom-next">
+            <i class="bx bxs-right-arrow"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="brand-showcase">
+      <img src="./assets/images/Object (6).png" alt="" />
+      <img src="./assets/images/Object (7).png" alt="" />
+      <img src="./assets/images/Object (3).png" alt="" />
+      <img src="./assets/images/Object (5).png" alt="" />
+      <img src="./assets/images/Object (4).png" alt="" />
+    </div>
+
+    <!-- Blog -->
+    <section id="blog">
+      <div class="blog-info">
+        <h1>
+          Our latest <br />
+          blog posts
+        </h1>
+        <p>
+          Minuteness of the parts formed a great hindrance to my speed,
+          resolved, contrary to my first intention, to make the being.
+          Minuteness of the parts formed a great hindrance to my speed,
+          resolved, contrary to my first intention, to make the being.
+        </p>
+      </div>
+
+      <div class="post-wrapper">
+        <div class="post-item">
+          <div class="post-img">
+            <img src="./assets/images/Rectangle.png" alt="post" />
+          </div>
+          <h3>Design</h3>
+          <h2>Truly it was a great journey and in it I met with many</h2>
+          <p>14 November, 2019</p>
+        </div>
+        <div class="post-item">
+          <div class="post-img">
+            <img src="./assets/images/Rectangle (1).png" alt="post" />
+          </div>
+          <h3>Tech</h3>
+          <h2>What looked like a small patch of purple grass</h2>
+          <p>14 November, 2019</p>
+        </div>
+        <div class="post-item">
+          <div class="post-img">
+            <img src="./assets/images/Rectangle (2).png" alt="post" />
+          </div>
+          <h3>Life</h3>
+          <h2>The roots were revolving small plant</h2>
+          <p>14 November, 2019</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="contact">
+        <h1>News Letter <br />Sign Up</h1>
+        <div class="contact-email">
+          <div class="email-box">
+            <h3>Get in touch</h3>
+            <input type="email" placeholder="Your email" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-link">
+        <div class="col-1">
+          <h2>Agency</h2>
+          <p>Agency © 2019. <br />All Rights Reserved.</p>
+        </div>
+        <div class="col-2">
+          <h4>Address</h4>
+          <p>3899 Fusce Rd. Frederick<br />Nebraska 20620</p>
+          <ul>
+            <li>info@agency.com</li>
+            <li>+1 (234) 567-89-00</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h4>Menu</h4>
+          <ul>
+            <li>About</li>
+            <li>Portfolio</li>
+            <li>Blog</li>
+            <li>Testimonials</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <i class="bx bxl-facebook"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-instagram"></i>
+        </div>
+      </div>
+
+      <div class="line-footer"></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
