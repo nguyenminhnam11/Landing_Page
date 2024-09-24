@@ -507,8 +507,17 @@ body {
   display: flex;
   margin-bottom: 100px;
 }
-.feature-container .swiper .swiper-slide:nth-child(even) .item {
+.feature-container .swiper .swiper-slide:first-child .item {
+  background-color: #9013FE;
+}
+.feature-container .swiper .swiper-slide:nth-child(2) .item {
   background-color: #417505;
+}
+.feature-container .swiper .swiper-slide:nth-child(3) .item {
+  background-color: #FF564F;
+}
+.feature-container .swiper .swiper-slide:last-child .item {
+  background-color: #F8E71C;
 }
 .feature-container .swiper .swiper-slide .item {
   padding: 48px;
